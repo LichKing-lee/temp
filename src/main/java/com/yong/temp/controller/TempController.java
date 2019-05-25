@@ -10,6 +10,7 @@ public class TempController {
 	public ResponseEntity<String> test() {
 		return ResponseEntity.ok()
 			.header("Keep-Alive", "timeout=0")
+			.header("Connection", "close")
 			.body("hello world");
 	}
 }
