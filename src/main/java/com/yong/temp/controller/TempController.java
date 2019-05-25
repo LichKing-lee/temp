@@ -9,8 +9,6 @@ public class TempController {
 	@GetMapping("/")
 	public ResponseEntity<String> test() {
 		return ResponseEntity.ok()
-			.header("Keep-Alive", "timeout=5")
-			.header("Connection", "keep-alive")
 			.body("hello world");
 	}
 }
